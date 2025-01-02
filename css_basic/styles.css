@@ -8,17 +8,24 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 20px;
 }
+.logo {
+    font-size: 3rem;  /* Make the logo bigger */
+    color: #fff;  /* White color for logo */
+    padding-right: 12px;  /* Add some space to the right of the logo */
+}
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: auto;
+    font-size: 0.9rem;
 }
 
 /* Flexbox Layout */
@@ -26,6 +33,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full height of viewport */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7; 
+    color: #333;
 }
 
 main {
@@ -35,12 +46,25 @@ main {
     justify-content: space-between;
     padding: 20px;
     width: 100%; /* Ensure full width */
+    gap: 20px;
 }
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;  /* More elegant font for headings */
+    color: #2c3e50;  /* Darker shade for headings */
+}
+
 
 article {
     flex: 2;
     padding: 20px; /* Uniform padding */
     overflow-y: auto; /* Enable scrolling */
+    font-size: 1rem;
+    color: #555;
+}
+
+article, aside {
+    padding: 20px;
 }
 
 aside {
@@ -53,16 +77,29 @@ aside {
 table {
     width: 100%;
     border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ddd;
     text-align: left;
+    font-size: 1rem;
 }
 
 th {
     background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+td:hover {
+    background-color: #f9f9f9; /* Highlight row on hover */
 }
 
 /* Responsive Design */
@@ -73,5 +110,8 @@ th {
 
     article, aside {
         padding: 10px;
+    }
+    .logo {
+        font-size: 1.5rem;
     }
 }
