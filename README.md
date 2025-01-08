@@ -1,9 +1,15 @@
-# 1. alx_html_css.Headphone Project
+# Headphone Project
 
-Hello, in this lesson we will learn how to implement a design from scratch.
+This project is part of the ALX Front-end curriculum. It involves building a web page from scratch using HTML and CSS, based on a design provided in Figma.
 
-# 2. What we will learn
-How to design a new website
-How to push to GitHub
+## Features
+- Header/hero section with a welcoming message.
+- Button to direct users to the shop section.
 
-# 3. How we will do it.
+## Technologies Used
+- HTML5
+- CSS3
+
+## Author
+Binalayefa
+
