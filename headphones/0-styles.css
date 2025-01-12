@@ -15,6 +15,7 @@
   .header {
     padding: 20px;
     background-color: #707c86;
+    background-image: url("headphones_hero_1.jpg");
   }
   
   .navbar {
@@ -56,7 +57,9 @@
   
   .hero {
     text-align: center;
-    margin-top: 20px; /* Space below navbar */
+    padding: 20px;
+    margin-top: 300px; /* Space below navbar */
+    
   }
   
   .hero h1 {
@@ -66,17 +69,23 @@
   
   .hero p:first-of-type {
     margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px; /* Adjust this value as needed */
+    line-height: 1.5; /* Optional: Adjusts spacing between lines for better readability */
   }
   
   .hero button {
     display: block;
     margin: 20px auto 50px; /* Large space below button */
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #FF6565;
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: #f03e3e;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
   }
   
@@ -107,4 +116,16 @@
       margin-bottom: 30px;
     }
   }
+
+  @font-face {
+    font-family: "Holberton School Icons";
+    src: url('assets/fonts/holberton_school-icon.woff2') format('woff2'),
+         url('assets/fonts/holberton_school-icon.woff') format('woff'),
+         url('assets/fonts/holberton_school-icon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
   
