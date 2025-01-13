@@ -1,0 +1,128 @@
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    
+    font-family: Arial, sans-serif;
+    line-height: 2.5;
+    color: rgb(247, 242, 242);
+  }
+  
+  /* Header Section */
+  .header {
+    padding: 40px;
+    background-color: #041d31;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -10px;
+    margin-left: 90px;
+  }
+  
+  .logo img {
+    max-height: 40px;
+    margin-top: 3px;
+  }
+  
+  /* Social Links Section */
+  .social-links {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    right: 150px;
+    align-items: center;
+    top: 30px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    gap: 15px; /* Spacing between icons */
+    margin-right: 20px; /* Adjust to control distance from the right edge */
+    margin-top: 10px; /* Adjust to control top margin */
+  }
+  
+  .icon {
+    font-family: "holberton_school-icon"; /* Reference the custom font */
+    font-size: 24px; /* Adjust the size of the icons */
+    color: white; /* Icon color */
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+  }
+  
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908"; /* Unicode for Facebook icon */
+  }
+  
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f"; /* Unicode for Twitter icon */
+  }
+  
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a"; /* Unicode for Instagram icon */
+  }
+  
+
+
+
+  /* Holberton School Icon Font */
+  @font-face {
+    font-family: 'holberton_school-icon';
+    src: url('fonts/holberton_school-icon.eot?sq4eq4');
+    src: url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+         url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+         url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+         url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* Social Media Icons (Font-based) */
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908"; /* Unicode for Facebook icon */
+  }
+  
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f"; /* Unicode for Twitter icon */
+  }
+  
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a"; /* Unicode for Instagram icon */
+  }
+
+  
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 10px; /* Small font size */
+    color: rgba(255, 255, 255, 0.6); /* White text with faint opacity */
+    margin-top: 100px; /* Space between footer content and this text */
+  }
+  
