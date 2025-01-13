@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Main Styles */
+  body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 600px; /* Max width to limit the size */
+    text-align: center;
+  }
+  
+  /* Contact Us Section */
+  .Contact-us {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .input-field span {
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(6, 6, 54);
+  }
+  
+  /* Shortened Lines */
+  .input-field hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 100%; /* Shortened line */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Call to Action Button */
+  .cta-btn {
+    background-color: red;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    font-size: 10px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #cc0000;
+  }
+  
