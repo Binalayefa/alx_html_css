@@ -1,0 +1,56 @@
+/* Add the pentagon shape and styles */
+.pentagon {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+  }
+  
+  .pentagon .text {
+    color: white;
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .pentagon .percentage {
+    font-size: 1.9rem;
+    font-weight: small;
+    display: block;
+    color: blue;
+  }
+  
+  .service {
+    margin: 0 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
