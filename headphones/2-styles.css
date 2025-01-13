@@ -1,0 +1,144 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("headphones_hero_2.jpg");
+    background-size: cover; /* Make the background image cover the entire page */
+    color: #fff; /* Set text color to white for readability */
+    height: 100vh; /* Ensure the body covers the full height of the viewport */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Section Styles */
+  .our-results {
+    padding: 20px;
+    /* Removed background-color to let the background image show */
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .my-1 {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    border-radius: 80px;
+    padding: 0rem;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #fff; /* Set text color to white */
+  }
+  
+  /* Grid Layout for Services */
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .service {
+    width: 150px;
+    height: 140px;
+    background-image: url('pentagone.png');
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: smaller;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* So that text can be positioned on top of the image */
+  margin: 0px; /* Add some space between the services */
+  color: white; /* Ensure text is readable */
+  box-shadow: none; /* Optional: Shadow for a 3D effect */
+}
+* Styling the Icon inside the service */
+.service span {
+  font-size: 10rem; /* Adjust icon size */
+  margin-bottom: 10px;
+}
+
+  
+  .service h2 {
+    font-size: 1.0rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #fff; /* Set text color to white */
+  }
+  
+  .service span {
+    font-size: 3rem;
+    color: #ffcc00; /* Set icon color */
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-4 {
+      grid-template-columns: 1fr;
+    }
+  
+    .heading {
+      font-size: 1.8rem;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  }
+  
+  
