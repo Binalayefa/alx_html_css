@@ -1,87 +1,277 @@
-/* Basic Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body and Main Styles */
   body {
-    background-color: white;
-    color: black;
     font-family: Arial, sans-serif;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+    line-height: 1.6;
+    color: white; /* Default text color */
+    margin: 0;
   }
   
-  main {
-    width: 100%;
-    max-width: 600px; /* Max width to limit the size */
-    text-align: center;
-  }
-  
-  /* Contact Us Section */
-  .Contact-us {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    background-color: white;
+  /* Header Section */
+  .header {
     padding: 20px;
-    background-color: transparent;
+    background-color: #707c86;
+    background-image: url("headphones_hero_1.jpg");
   }
   
-  /* Heading */
-  .heading {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  /* Input Fields */
-  .input-field {
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: block;
-    color: black;
-    margin-bottom: 10px;
-    text-align: left;
+  .logo img {
+    max-height: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
   
-  .input-field span {
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 70px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
     font-weight: bold;
     font-size: 1rem;
-    display: inline-block;
-    color: rgb(6, 6, 54);
   }
   
-  /* Shortened Lines */
-  .input-field hr {
-    border: none;
-    height: 2px;
-    background-color: #ccc;
-    width: 100%; /* Shortened line */
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
+  .nav-links a:hover {
+    color: #FF6565;
   }
   
-  /* Call to Action Button */
-  .cta-btn {
-    background-color: red;
-    color: white;
-    font-size: 1.1rem;
-    padding: 15px 30px;
+  .hero {
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p:first-of-type {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .hero button {
+    display: block;
+    margin: 20px auto 50px;
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: #f03e3e;
+    color: #fff;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 30px;
+  }
+  
+  .hero button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Section: What We Do */
+  .what-we-do {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .what-we-do .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+  }
+  
+  .what-we-do .description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: black;
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .service span {
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .service:hover span {
+    transform: rotate(15deg);
+    color: black;
+  }
+  
+  .service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .service p {
+    font-size: 0.9rem;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  /* Our Results Section */
+  .our-results {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background */
+    background-image: url("headphones_hero_2.jpg");
+  }
+  
+  .our-results .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .our-results .description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: white;
+  }
+  
+  .pentagon-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .pentagon {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: #ff5757; /* Red color for pentagon */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pentagon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .pentagon .upper-text {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .pentagon .lower-text {
+    font-size: 0.7rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pentagon-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+
+/* Contact Us Section */
+.contact-us {
+    border-radius: 10px; 
+    max-width: 400px;
+    padding: 40px 20px;
+    margin: 40px auto; /* Center horizontally and add spacing */
+    text-align: center;
+}
+
+
+.contact-us .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    align-items: right;
+   
+}
+
+.contact-us .input-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-us .input-field span {
+    display: block;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #555; /* Medium gray text */
+    margin-bottom: 40px;
+    
+}
+
+.contact-us .input-field hr {
+    height: 1px;
+    background-color: #ccc;
+    width: 120%;
+    margin: 2px;
+}
+
+/* Call to Action Button */
+.contact-us .cta-btn {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 12px 25px;
     font-size: 10px;
-  }
-  
-  .cta-btn:hover {
-    background-color: #cc0000;
-  }
-  
+    font-weight: bold;
+    color: #fff;
+    background-color: red; /* Blue button */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-us .cta-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
