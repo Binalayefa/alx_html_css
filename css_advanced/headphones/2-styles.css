@@ -1,0 +1,218 @@
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white; /* Default text color */
+    margin: 0;
+  }
+  
+  /* Header Section */
+  .header {
+    padding: 20px;
+    background-color: #707c86;
+    background-image: url("headphones_hero_1.jpg");
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 70px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #FF6565;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p:first-of-type {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .hero button {
+    display: block;
+    margin: 20px auto 50px;
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: #f03e3e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Section: What We Do */
+  .what-we-do {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .what-we-do .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+  }
+  
+  .what-we-do .description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: black;
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .service span {
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .service:hover span {
+    transform: rotate(15deg);
+    color: black;
+  }
+  
+  .service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .service p {
+    font-size: 0.9rem;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  /* Our Results Section */
+  .our-results {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background */
+    background-image: url("headphones_hero_2.jpg");
+  }
+  
+  .our-results .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .our-results .description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: white;
+  }
+  
+  .pentagon-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .pentagon {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: #ff5757; /* Red color for pentagon */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pentagon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .pentagon .upper-text {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .pentagon .lower-text {
+    font-size: 0.7rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pentagon-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  

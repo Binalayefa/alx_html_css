@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+# Headphone Project
+
+This project is part of the ALX Front-end curriculum. It involves building a web page from scratch using HTML and CSS, based on a design provided in Figma.
+
+## Features
+- Header/hero section with a welcoming message.
+- Button to direct users to the shop section.
+
+## Technologies Used
+- HTML5
+- CSS3
+
+## Author
+Binalayefa
+
+=======
 # CSS & HTML Advanced Styling
 
 ## Description
@@ -35,3 +52,4 @@ This project showcases advanced styling techniques using CSS and HTML. It follow
 ---
 # CSS Advanced Directory
 This directory contains advanced CSS styling files, including index.html and style.css.
+>>>>>>> b31c1ff (Initial setup for CSS Advanced Project)

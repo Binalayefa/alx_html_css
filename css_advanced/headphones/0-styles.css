@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  /* Header Section */
+  .header {
+    padding: 20px;
+    background-color: #707c86;
+    background-image: url("headphones_hero_1.jpg");
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 50px; /* Adjust logo size as needed */
+    margin-right: 10px; /* Small space between logo and text */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #FF6565; /* Optional hover effect */
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px; /* Space below navbar */
+    
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p:first-of-type {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px; /* Adjust this value as needed */
+    line-height: 1.5; /* Optional: Adjusts spacing between lines for better readability */
+  }
+  
+  .hero button {
+    display: block;
+    margin: 20px auto 50px; /* Large space below button */
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: #f03e3e;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    opacity: 0.9;
+  }
+  
+  .hero p:last-of-type {
+    line-height: 1.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      justify-content: flex-start;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero button {
+      margin-bottom: 30px;
+    }
+  }
+
+  @font-face {
+    font-family: "Holberton School Icons";
+    src: url('assets/fonts/holberton_school-icon.woff2') format('woff2'),
+         url('assets/fonts/holberton_school-icon.woff') format('woff'),
+         url('assets/fonts/holberton_school-icon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+  
