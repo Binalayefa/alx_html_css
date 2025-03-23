@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 60px;
     background-color: #F8F8F8;
     color: #333;
     text-align: center;
@@ -76,17 +76,19 @@ main {
 
 /* Hero Text */
 h1 {
-    font-size: 110px;
+    font-size: 120px;
     font-weight: bold;
     color: white;
-    margin-bottom: 10px;
+    margin-top: 135px;
+    margin-bottom: 15px;
 }
 
 span {
     font-size: 12px;
     font-weight: bold;
-    margin: 25px;
+    margin: 30px;
     color: white;
+    
 }
 
 /* Button */
@@ -96,13 +98,10 @@ button {
     font-size: 10px;
     font-weight: bold;
     border: none;
-    padding: 12px 20px;
-    border-radius: 30px;
+    border-radius: 0px;
     cursor: pointer;
-    margin-top: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 90px; /* Adjust this value as needed */
     transition: all 0.3s ease-in-out;
 }
 
@@ -188,46 +187,65 @@ button:hover {
 }
 
 
+
+
 /* Quote Section */
 .quote-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-    
+    justify-content: start; /* Aligns content to the left */
+    width: 190%; /* Adjust the width */
+    max-width: 1700px; /* Ensures content doesn't stretch too much */
+    gap: 70px; /* Space between image and text */
+    height: 350px;
     background-color: #c371f3; /* Light purple background */
-    padding: 2rem;
-    gap: 20px;
-    text-align: left;
 }
 
-.quote-section img {
-    width: 150px;
+/* Quote Image */
+.quote-image img {
+    width: 230px; /* Adjust the size */
     height: auto;
-    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 90%; /* Moves the image a little toward the center */
 }
 
-.quote-section blockquote {
-    font-size: 13px;
-    font-weight: 300;
-    color: white;
-    max-width: 500px;
+/* Quote Content */
+.quote-content {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px; /* Restrict text width for better readability */
 }
 
-.quote-section h3 {
+/* Blockquote */
+blockquote {
     font-size: 18px;
-    font-weight: bold;
+    font-style: italic;
     color: white;
-    margin-top: 10px;
-    margin-left: 34px;
+    margin: 0 0 10px; /* Spacing below the quote */
 }
 
-.quote-section p {
-    font-size: 13px;
+/* Person Name */
+.quote-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1px;
+    margin-right: 400px;
     color: white;
-    margin-left: 34px;
-    font-style: italic;
 }
+
+/* Person Title */
+.quote-title {
+    font-size: 14px;
+    color: white;
+    margin-right: 400px;
+}
+
+
+
+
+
 
 
 section {
@@ -386,7 +404,7 @@ button {
     border: none;
     padding: 12px 20px;
     font-size: 15px;
-    margin: 20px auto 0; /* Centers the button */
+    margin: 0px auto 0; /* Centers the button */
     border-radius: 30px;
     cursor: pointer;
 }
@@ -398,7 +416,7 @@ button:hover {
 
 /* Set white background */
 .faq-section {
-    background-color: white;
+  
     padding: 50px 0; /* Adds space around the section */
     text-align: center;
     display: flex;
@@ -414,8 +432,6 @@ button:hover {
     margin-bottom: 30px;
     color: #333;
 }
-
-
 /* FAQ container */
 .faq-container {
     display: grid;
@@ -441,7 +457,51 @@ button:hover {
 /* Answer styling */
 .faq-card p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5%;
 }
 
+footer {
+    background-color: #0a1128; /* Very dark blue */
+    padding: 10px 10px;
+    height: 18%;
+}
 
+footer section {
+    display: flex;
+    justify-content: center; /* Centers the items closer */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduce gap */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 700px; /* Reduce the space between logo and icons */
+    width: auto; /* Adjust width to prevent stretching */
+}
+
+.logo-container img {
+    width: 100px; /* Slightly smaller logo */
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Reduce space between icons */
+}
+
+.social-icons i {
+    font-size: 18px; /* Slightly smaller icons */
+    color: white;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+}
