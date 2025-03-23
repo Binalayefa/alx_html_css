@@ -394,3 +394,54 @@ button {
 button:hover {
     background-color: #a05dcf; /* Slightly darker purple on hover */
 }
+
+
+/* Set white background */
+.faq-section {
+    background-color: white;
+    padding: 50px 0; /* Adds space around the section */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Center the FAQ heading with proper spacing */
+.faq-section h2 {
+    font-size: 34px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+/* FAQ container */
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px; /* Reducing the gap between cards */
+    width: 80%;
+    max-width: 800px; /* Limits width to keep content centered */
+    margin: 0 auto; /* Centers the grid */
+}
+
+/* FAQ card styling */
+.faq-card {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Question styling */
+.faq-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Answer styling */
+.faq-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
