@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('object.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Header & Navigation */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-left: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding-top: 30;
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #D8BFD8;
+}
+
+/* Main Section */
+main {
+    padding: 50px 0;
+}
+
+/* Hero Text */
+h1 {
+    font-size: 110px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 25px;
+    color: white;
+}
+
+/* Button */
+button {
+    background-color: #f080f0;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #f713d8;
+    transform: scale(1.05);
+}
+
+/* Learn from the Pros Section */
+.learn-section {
+    text-align: center;
+    color: rgb(21, 6, 158);
+    margin-top: 150px;
+}
+
+.learn-section h2 {
+    font-size: 19px;
+    color: white;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+
+
+.purple-text {
+    font-style: inherit;
+    font-size: 19px;
+    margin-right: 5px;
+    color: #f080f0; /* Change this to your preferred color */
+}
+
+
+/* Pros Container */
+.pros-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+/* Individual Card */
+.pros-card {
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pros-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    border: 0px solid #D8BFD8;
+}
+
+.pros-card h3 {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 2px;
+   
+}
+
+.pros-card p {
+    font-size: 12px;
+    color: white;
+    margin-top: 2;
+}
+
+.pros-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Quote Section */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c371f3; /* Light purple background */
+    padding: 50px;
+    gap: 20px;
+    text-align: left;
+}
+
+.quote-section img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quote-section blockquote {
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    max-width: 500px;
+}
+
+.quote-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-left: 34px;
+}
+
+.quote-section p {
+    font-size: 13px;
+    color: white;
+    margin-left: 34px;
+    font-style: italic;
+}
