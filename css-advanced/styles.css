@@ -116,6 +116,7 @@ button:hover {
     text-align: center;
     color: rgb(21, 6, 158);
     margin-top: 150px;
+    
 }
 
 .learn-section h2 {
@@ -192,8 +193,10 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    
     background-color: #c371f3; /* Light purple background */
-    padding: 50px;
+    padding: 2rem;
     gap: 20px;
     text-align: left;
 }
@@ -224,4 +227,170 @@ button:hover {
     color: white;
     margin-left: 34px;
     font-style: italic;
+}
+
+
+section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 1.1;
+    margin-bottom: 55px; /* Adjusts spacing below the heading */
+}
+
+.highlight {
+    font-size: 20px;
+    color: #c371f3; /* Light purple */
+}
+
+.section-container {
+    background-color: #F8F8F8;
+    width: 100%;
+    max-width: 1200px; /* Ensures it doesn’t stretch too wide */
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: space-between; /* Ensures even spacing */
+    gap: 10px; /* Adjust spacing between cards */
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+}
+
+.card {
+    flex: 1 1 calc(25% - 10px); /* Ensures 4 cards fit in one row */
+    min-width: 200px;
+    max-width: 280px; /* Adjust if needed */
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+
+
+
+.card h3,
+.card p,
+.author,
+.stars {
+    text-align: left; /* Explicitly aligns text, stars, and author section */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding-left: 0;
+    text-align: left;
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 5px; /* Reduce space between title and description */
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.author img {
+    width: 30px; /* Adjust size of the image */
+    height: 30px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image is properly cropped */
+}
+
+.author h4 {
+    margin: 0;
+    font-size: 14px; /* Adjusts name size */
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    color: #c371f3;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.time {
+    font-size: 12px;
+    color: #c371f3;
+}
+
+.section-container2 {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(1, 1, 36); /* Navy blue background */
+    padding: 40px 20px; /* Adds spacing inside the section */
+    text-align: center; /* Centers the heading and button */
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.membership-container {
+    display: flex;
+    justify-content: space-evenly; /* Aligns items from left to right */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+}
+
+.membership-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 15%;
+    min-width: 160px;
+    text-align: center;
+}
+
+.membership-container img {
+    width: 50px; /* Adjust image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.membership-container h3,
+.membership-container p {
+    color: white; /* Ensures text is visible */
+    margin: 19px;
+
+}
+
+button {
+    display: block;
+    background-color: #c371f3; /* Purple button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    margin: 20px auto 0; /* Centers the button */
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a05dcf; /* Slightly darker purple on hover */
 }
